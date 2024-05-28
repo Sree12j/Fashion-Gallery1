@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+   box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height:100vh;
+    background-color: rgb(255, 255,255);
+   
+}
+.img-wrapper{
+    width:100%;
+    height:400px;
+   position: relative;
+   
+}
+.img-wrapper img{
+width:66px;
+height:66px;
+position: absolute;
+left: 50%;
+top: 20%;
+transform:translate(-50%,-30%);
+}
+.main-wrapper{
+    width:100%;
+    height:70%;
+   position: relative;
+   margin-top: 16px;
+}
+.content-wrapper{
+   position:absolute;
+   bottom:20%;
+   left:50%;
+   transform: translate(-50%,-30%);
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   
+   
+
+}
+.title,.email,.btn{
+margin-top:24px;
+}
+.title{
+font-size: 22px;
+color:black;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.email{
+ border-radius: 6px;
+ font-size: 20px;
+ 
+}
+.email input{
+    width:100%;
+    height: 50px;
+    padding-left:15px;
+ }
+ input:focus{
+    border: solid rgb(4, 175, 144);
+ }
+
+.btn{
+color: white;
+background-color: rgb(4, 175, 144);
+border: none;
+width:100%;
+height:50px;
+border-radius: 5px;
+
+}
+.btn:hover{
+    background-color:rgb(8, 128, 106); ;
+}
+
+p{
+    margin-top:8px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+p a{
+    text-decoration: none;
+    color:rgb(4, 175, 144);
+    margin-left: 3px;
+}
+.btns{
+    margin-top:17px;
+ width:100%;
+  height:50px;
+  text-align: center;
+ position: relative;
+}
+span img{
+width:30px;
+padding-top: 9px;
+position: absolute;
+left:12px;
+right:0;
+bottom: 0;
+top:0;
+
+}
+.last {
+    text-align: center;
+    margin-left: 50%;
+    transform: translate(-50%);
+    padding-bottom: 29px;
+   
+}
+.last a{
+    text-decoration: none;
+    color: rgb(4, 175, 144);;
+  
+}
+.last span{
+    padding: 5px;
+}
+@media (max-width:500px){
+    .img-wrapper img{
+        width:64px;
+        height:66px;
+        
+    }
+    .title{
+        font-size: 15px;
+    }
+    span img{
+        width:20px;
+        padding-top:9px;
+        left:5px;
+        right:0;
+        bottom: 0;
+        top:0;
+        
+        }
+      .text{
+          font-size: 10px;
+          margin-left:17px;
+          
+       }
+}
+
